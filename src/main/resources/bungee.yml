@@ -1,0 +1,21 @@
+main: com.xethlyx.adminchat.AdminChat
+author: xethlyx
+name: AdminChat
+version: ${version}
+depends: ["LuckPerms", "RedisBungee"]
+commands:
+  adminchat:
+    description: Speak in admin chat
+    aliases: ["ac"]
+    permission: xethlyx.adminchat.speak
+    usage: /adminchat <message>
+  adminchattoggle:
+    description: Toggles speaking in admin chat
+    aliases: ["act"]
+    permission: xethlyx.adminchat.speak
+    usage: /adminchattoggle
+permissions:
+  xethlyx.adminchat.speak:
+    description: Allows using the command /adminchat
+  xethlyx.adminchat.see:
+    description: Allows seeing admin chat
