@@ -6,14 +6,9 @@ depends: ["LuckPerms", "RedisBungee"]
 commands:
   adminchat:
     description: Speak in admin chat
-    aliases: ["ac"]
+    aliases: ["ac", "a"]
     permission: xethlyx.adminchat.speak
     usage: /adminchat <message>
-  adminchattoggle:
-    description: Toggles speaking in admin chat
-    aliases: ["act"]
-    permission: xethlyx.adminchat.speak
-    usage: /adminchattoggle
 permissions:
   xethlyx.adminchat.speak:
     description: Allows using the command /adminchat

@@ -90,5 +90,8 @@ object ChatHandler {
             if (!player.hasPermission("xethlyx.adminchat.see")) continue
             player.sendMessage(prefixComponent, senderComponent, splitComponent, playerMessageComponent)
         }
+
+        val console = AdminChat.instance.proxy.console
+        console.sendMessage(prefixComponent, senderComponent, splitComponent, playerMessageComponent)
     }
 }
